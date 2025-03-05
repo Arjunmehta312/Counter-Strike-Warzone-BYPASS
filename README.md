@@ -1,8 +1,9 @@
 # Counter-Strike WaRzOnE: Play with Friends on College Wi-Fi (2025 Guide)
 
-#### NOTE: The first person aka host will have to download the zip file and extract it from this repository and then can share that via python http command (the python http command is just for faster download speeds so you dont waste lab-time setting up the game)
 
-This guide will help you **set up, share, and play Counter-Strike WaRzOnE with friends on college Wi-Fi** despite network restrictions. We will use a **local file-sharing server** and **HLDS (Half-Life Dedicated Server)** to play multiplayer matches.
+### This guide will help you **set up, share, and play Counter-Strike WaRzOnE with friends on college Wi-Fi** despite network restrictions. We will use a **local file-sharing server** and **HLDS (Half-Life Dedicated Server)** to play multiplayer matches.
+
+#### NOTE: The first person aka host will have to download the zip file and extract it from this repository and then can share that via python http command (the python http command is just for faster download speeds so you dont waste lab-time setting up the game)
 
 ## **1. Download & Share Game Files**
 Since college Wi-Fi blocks many sites, we will **share the game files directly** using a Python-based local file server.
