@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-Strike WaRzOnE - Play on College Wi-Fi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Counter-Strike WaRzOnE: Play with Friends on College Wi-Fi</h1>
+        <p>This guide helps you set up and play CS WaRzOnE with friends using a local server.</p>
+
+        <div class="download-section">
+            <a href="Counter-Strike WaRzOnE.zip" class="download-btn">⬇ Download Counter-Strike WaRzOnE.zip</a>
+            <p><small>Share this link with friends on the same Wi-Fi.</small></p>
+        </div>
+
+        <div class="instructions">
+            <h2>📌 Step 1: Share the Game Files</h2>
+            <p>Run a local file-sharing server to distribute game files quickly.</p>
+            <pre>
+1️⃣ Open the folder where "Counter-Strike WaRzOnE.zip" is stored.
+2️⃣ Open PowerShell or Command Prompt and type:
+   <code>python -m http.server 8000 --bind 0.0.0.0</code>
+3️⃣ Find your IP address:
+   <code>ipconfig | findstr "IPv4"</code>
+4️⃣ Share the link with friends: 
+   <strong>http://YOUR_LOCAL_IP:8000</strong>
+            </pre>
+
+            <h2>📌 Step 2: Install & Start the Game</h2>
+            <ul>
+                <li>Download and extract the ZIP file.</li>
+                <li>Run <strong>CS16Launcher.exe</strong> to start the game.</li>
+                <li>Go to <strong>Options > Multiplayer > Customize</strong> and change your name.</li>
+            </ul>
+
+            <h2>📌 Step 3: Host a Server with HLDS</h2>
+            <pre>
+1️⃣ Open the extracted folder and run <strong>hlds.exe</strong>.
+2️⃣ Set up your game preferences (map, settings, players, etc.).
+3️⃣ Click "Start Server" and note your local IP.
+            </pre>
+
+            <h2>📌 Step 4: Join the Game</h2>
+            <ul>
+                <li>Open **CS16Launcher.exe**.</li>
+                <li>Go to <strong>Find Servers > Favorites > Add Server</strong>.</li>
+                <li>Enter the server IP you got from HLDS.</li>
+                <li>If the server doesn’t show, open the console and type:
+                    <code>connect YOUR_SERVER_IP:27015</code>
+                </li>
+            </ul>
+
+            <h2>📌 Step 5: Troubleshooting</h2>
+            <p><strong>❌ Game doesn’t appear in LAN?</strong> Try using the console command:</p>
+            <code>connect YOUR_SERVER_IP:27015</code>
+
+            <p><strong>❌ Connection Timed Out?</strong> Make sure both players are on the same Wi-Fi network.</p>
+
+            <p><strong>❌ HLDS Server Not Visible?</strong> Disable Windows Firewall temporarily:</p>
+            <code>netsh advfirewall set allprofiles state off</code>
+
+            <p>Enable it back after playing:</p>
+            <code>netsh advfirewall set allprofiles state on</code>
+
+            <h2>✅ Enjoy the Game! 🚀</h2>
+            <p>Made with ❤️ by 2nd Year B.Tech Cybersecurity Students (24-25)</p>
+        </div>
+    </div>
+</body>
+</html>
